@@ -23,7 +23,7 @@ const Navbar = ({ children }) => {
           {["Back"].map((item, index) => (
             <NavBarItem key={item + index} title={item} />
           ))}
-          <li className="text-3xl font-bold">10 ACADAMEY</li>
+          <li className="text-3xl font-bold">Tenx Certify</li>
           <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
             Login
           </li>
