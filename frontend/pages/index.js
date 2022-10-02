@@ -1,7 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import React from "react";
+import Navbar from "../components/navbar";
+import Home from "./home";
 
-export default function Home() {
-  return <div></div>;
+function Index() {
+  return <Home />;
 }
+
+export default Index;
