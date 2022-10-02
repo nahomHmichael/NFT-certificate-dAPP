@@ -82,8 +82,8 @@ export const AlgoProvider = ({ children }) => {
       let totalIssuance = 1;
       // Used to display asset units to user
       let unitName = "Tenx NFT";
-      // Friendly name of the asset
-      let assetName = "jer";
+      // name of the asset
+      let assetName = "Tenx";
 
       // let assetName = `${req.body.name}'s Asset`;
       // Optional string pointing to a URL relating to the asset
@@ -194,23 +194,6 @@ export const AlgoProvider = ({ children }) => {
 
       // You should now see the 1 assets listed in the account information
       console.log("Successfuly transferred asset");
-      // await OptinModel.findOneAndDelete({ asset_id: req.body.asset_id });
-      // //  Freeze the asset
-      // console.log('Freezing asset...');
-      // await freezeAsset(algodclient, sender, recipient, req.body.asset_id, sk);
-      // console.log('Asset successfully frozen');
-      // const user = {
-      //   name: req.body.name,
-      //   email: req.body.email,
-      // };
-      // const assetUrl =
-      //   'https://goalseeker.purestake.io/algorand/testnet/asset/' +
-      //   req.body.asset_id;
-      // await new Email(user, assetUrl).sendAssetConfirmation();
-      // res.status(200).json({
-      //   status: 'success',
-      //   message: 'Asset transferred successfully',
-      // });
     } catch (err) {
       console.log("SOME ERROR HAS OCCURED: ", err);
     }

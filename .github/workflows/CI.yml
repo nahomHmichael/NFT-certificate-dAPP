@@ -1,0 +1,19 @@
+name: unittest
+on: 
+  push:
+    branches:
+    - main
+jobs:
+  run:
+    runs-on: ubuntu-latest 
+    #container: docker://dvcorg/cml-py3:latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: run_CItest
+      run: | 
+        pip install -r requirements.txt
+      #python scripts/script.py
+    - name: run-tests
+      run: |
+        cd tests/
+      python -m unittest discover
